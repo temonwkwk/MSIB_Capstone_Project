@@ -5,8 +5,10 @@ using UnityEngine;
 public class TriggerReceiver : MonoBehaviour
 {
 
+    [SerializeField] private string parameterBoolName;
+    [SerializeField] private float waitFor;
     private Animator animator;
-    private bool isPlatformup = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,18 +21,16 @@ public class TriggerReceiver : MonoBehaviour
         
     }
 
-    public void PlatformUp()
+    public void TriggerOn()
     {
-        animator.SetBool("isPlatformup", true);
+        animator.SetBool(parameterBoolName, true);
 
-        StartCoroutine(PlatformDown());
+        StartCoroutine(ReturnTrigger());
     }
 
-    public IEnumerator PlatformDown()
+    public IEnumerator ReturnTrigger()
     {
-        yield return new WaitForSeconds(3);
-        animator.SetBool("isPlatformup", false);
-
-
+        yield return new WaitForSeconds(waitFor);
+        animator.SetBool(parameterBoolName, false);
     }
 }
