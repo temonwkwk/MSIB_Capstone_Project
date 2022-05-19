@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
-    private float jump = 0; // Double Jump
+    private bool doubleJump;  // Double Jump
     [SerializeField] private float playerSpeed = 2.0f;
     [SerializeField] private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
@@ -50,13 +50,13 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && groundedPlayer)
         {
             Jump();
-            jump++;
+            doubleJump = true;
         }
         // Double Jump
-        else if (Input.GetButtonDown("Jump") && power == 1 && jump > 0)
+        else if (Input.GetButtonDown("Jump") && doubleJump == true)
         {
             Jump();
-            jump = 0;
+            doubleJump = false;
         }
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
