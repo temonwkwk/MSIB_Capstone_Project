@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Intro.unity
-    guid: b84865db938d02f4184096c67f063d8f
+    path: Assets/Scenes/ChangeSceneTest1.unity
+    guid: 997b2b3859ec4fc4988db1a1da063154
   - enabled: 1
-    path: Assets/Scenes/IsometricCam.unity
-    guid: bc7f97e58632a6b4cb78f61cb3614223
+    path: Assets/Scenes/ChangeSceneTest2.unity
+    guid: 8066d3859f9b06c47b4d10c928827569
   m_configObjects: {}
