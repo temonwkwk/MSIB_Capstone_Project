@@ -18,6 +18,7 @@ public class CameraSwitcher
     {
         camera.Priority = 10;
         ActiveCamera = camera;
+        
 
         foreach (CinemachineVirtualCamera c in cameras)
         {

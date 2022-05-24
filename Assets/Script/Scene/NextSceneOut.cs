@@ -13,7 +13,7 @@ public class NextSceneOut : MonoBehaviour
         if(PlayerPrefs.GetString("SceneOutName") == newsceneOutName)
         {
             // Debug.Log("playerIsHere");
-            PlayerManager.instance.transform.position = gameObject.transform.position;
+            PlayerManager.instance.transform.position = transform.position;
         }
     }
 
