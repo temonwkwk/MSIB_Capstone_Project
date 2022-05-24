@@ -12,6 +12,6 @@ public class NextSceneIn : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         PlayerPrefs.SetString("SceneOutName", sceneOutName);
-        SceneManager.LoadScene(nextSceneName);
+        SceneManager.LoadSceneAsync(nextSceneName);
     }
 }

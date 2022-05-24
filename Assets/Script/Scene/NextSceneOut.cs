@@ -6,6 +6,7 @@ public class NextSceneOut : MonoBehaviour
 {
 
     public string newsceneOutName;
+    public CharacterController Playerctrl;
 
     // Start is called before the first frame update
     void Start()
@@ -13,7 +14,10 @@ public class NextSceneOut : MonoBehaviour
         if(PlayerPrefs.GetString("SceneOutName") == newsceneOutName)
         {
             // Debug.Log("playerIsHere");
+            Playerctrl = PlayerManager.instance.transform.GetComponent<CharacterController>();
+            Playerctrl.enabled = false;
             PlayerManager.instance.transform.position = transform.position;
+            Playerctrl.enabled = true;
         }
     }
 
