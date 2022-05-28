@@ -33,6 +33,7 @@ public class TriggerScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        
         if (other.tag == TagObject)
         {
             TriggerEvent.Invoke();
