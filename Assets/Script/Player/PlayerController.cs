@@ -5,15 +5,15 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-    private CharacterController controller;
+    public CharacterController controller;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
-    private bool doubleJump;  // Double Jump
-    [SerializeField] private float playerSpeed = 2.0f;
+    private bool doubleJump;
+    [SerializeField] public float playerSpeed = 2.0f;
     [SerializeField] private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
-    private float power = 0; // Indikator Power
-
+    public Vector3 move; //Direction
+    
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
@@ -38,8 +38,8 @@ public class PlayerController : MonoBehaviour
         forward.Normalize();
         right.Normalize();
 
-        Vector3 move = forward * verticalAxis + right * horizontalAxis;
-        controller.Move(move * Time.deltaTime * playerSpeed);
+        move = forward * verticalAxis + right * horizontalAxis;
+        controller.Move(move.normalized * Time.deltaTime * playerSpeed);
 
         if (move != Vector3.zero)
         {
@@ -61,17 +61,6 @@ public class PlayerController : MonoBehaviour
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
         
-        // Power Change
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            power++;
-        }
-
-        //Biar Power Balik ke Awal
-        if (power > 1) // 1 buat total power
-        {
-            power = 0;
-        }
     }
 
     public void Jump() {
