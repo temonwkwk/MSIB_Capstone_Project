@@ -1,7 +1,7 @@
 using UnityEngine;
 using Cinemachine;
 
-public class CameraVirtualInsert : MonoBehaviour
+public class CameraVirtualDollyInsert : MonoBehaviour
 {
     public GameObject vPlayerTarget;
     public Transform vPlayerTransform;
