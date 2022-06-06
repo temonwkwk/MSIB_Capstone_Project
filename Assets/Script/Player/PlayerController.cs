@@ -6,6 +6,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
+    public Animator anim;
+
     private Vector3 playerVelocity;
     private bool groundedPlayer;
     private bool doubleJump;
@@ -17,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
+        anim = gameObject.GetComponent<Animator>();
     }
 
     void Update()
@@ -44,6 +47,14 @@ public class PlayerController : MonoBehaviour
         if (move != Vector3.zero)
         {
             gameObject.transform.forward = move;
+            anim.SetBool("isMoving", true);
+        }
+        else
+        {
+            anim.SetBool("isMoving", false);
+            //anim.SetBool("isPushing", false);
+
+
         }
 
         // Changes the height position of the player..
@@ -65,5 +76,6 @@ public class PlayerController : MonoBehaviour
 
     public void Jump() {
         playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+        anim.SetTrigger("isJumping");
     }
 }
