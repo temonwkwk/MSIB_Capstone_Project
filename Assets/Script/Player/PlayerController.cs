@@ -54,8 +54,6 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("isMoving", false);
             //anim.SetBool("isPushing", false);
-
-
         }
 
         // Changes the height position of the player..
