@@ -6,21 +6,30 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GameIntro.unity
-    guid: b84865db938d02f4184096c67f063d8f
-  - enabled: 1
-    path: Assets/Scenes/StartingPoint.unity
+    path: Assets/Scenes/Capstone/StartingPoint/StartingPoint.unity
     guid: ffb5f91d6aae4404dac943ee04971704
   - enabled: 1
-    path: Assets/Scenes/Testing/ChangeSceneTest1.unity
-    guid: 997b2b3859ec4fc4988db1a1da063154
+    path: Assets/Scenes/Capstone/StartingPoint/PuzzleTutorial1.unity
+    guid: 855ddba2754eb4844853be20a0f8b137
   - enabled: 1
-    path: Assets/Scenes/Testing/ChangeSceneTest2.unity
-    guid: 8066d3859f9b06c47b4d10c928827569
+    path: Assets/Scenes/Capstone/StartingPoint/PuzzleTutorial2.unity
+    guid: 2aaadac1d7a828a459e16c23452837fe
   - enabled: 1
-    path: Assets/Scenes/Testing/IsometricCam.unity
-    guid: bc7f97e58632a6b4cb78f61cb3614223
+    path: Assets/Scenes/Capstone/StartingPoint/PuzzleTutorial3.unity
+    guid: d0fa5bbc957ff7c47874f53f214a4cc6
   - enabled: 1
-    path: Assets/Scenes/Temple Template.unity
-    guid: b8c36d702bc382c49919f67a1b453447
+    path: Assets/Scenes/Capstone/CenterPoint.unity
+    guid: ae3564e4a31d952408630cd056194928
+  - enabled: 1
+    path: Assets/Scenes/Capstone/Level1/Level1Area1.unity
+    guid: 61285db2395f1bc46947a587a1389e51
+  - enabled: 1
+    path: Assets/Scenes/Capstone/Level1/Level1Area2.unity
+    guid: eb336d38b33a427499991e19e33eec0c
+  - enabled: 1
+    path: Assets/Scenes/Capstone/Level1/Level1Area3.unity
+    guid: 9c1a1fb4eb6cdd04e9c8400c75e5bbfd
+  - enabled: 1
+    path: Assets/Scenes/Capstone/Level1/Level1Area4.unity
+    guid: 66c7d9f8be52e6b44949b7ec23595992
   m_configObjects: {}

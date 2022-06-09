@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public class NextSceneIn : MonoBehaviour
 {
 
-    public string nextSceneName;
-    public string sceneOutName;
+    public string nextSceneName; // Target Scene selanjutnya?
+    public string TargetLocName; // Target Lokasi player akan muncul dimana? 
 
     private void OnTriggerEnter(Collider other)
     {
-        PlayerPrefs.SetString("SceneOutName", sceneOutName);
+        PlayerPrefs.SetString("SceneOutName", TargetLocName);
         SceneManager.LoadSceneAsync(nextSceneName);
     }
 }
