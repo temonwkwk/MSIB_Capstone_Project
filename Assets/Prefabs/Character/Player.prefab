@@ -1023,6 +1023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   anim: {fileID: 0}
+  pushForce: 0
   playerSpeed: 6.43
   jumpHeight: 1
   move: {x: 0, y: 0, z: 0}
@@ -1051,6 +1052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceMagnitude: 0
+  playerctrl: {fileID: 0}
 --- !u!1 &3594913139542319049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,7 +2198,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6478536213147159724, guid: be85a7b6bfc73064cb317b99c2df296a, type: 3}
+  - {fileID: 2100000, guid: c8797080fc2244743b2b769a6ff3c9c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

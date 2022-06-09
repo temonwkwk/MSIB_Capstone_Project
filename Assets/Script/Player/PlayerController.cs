@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 playerVelocity;
     private bool groundedPlayer;
     private bool doubleJump;
+    public float pushForce;
     [SerializeField] public float playerSpeed = 2.0f;
     [SerializeField] private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
@@ -77,5 +78,15 @@ public class PlayerController : MonoBehaviour
     public void Jump() {
         playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         anim.SetTrigger("isJumping");
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Rigidbody rb = hit.collider.attachedRigidbody;
+
+        if(rb != null && hit.collider.CompareTag("Box"))
+        {
+            rb.velocity = hit.moveDirection * pushForce;
+        }
     }
 }
