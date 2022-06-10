@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TriggerObject
   - Box
+  - Lever
   layers:
   - Default
   - TransparentFX

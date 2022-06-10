@@ -13,6 +13,7 @@ public class Tuas1 : MonoBehaviour
         {
             Depan.GetComponent<Animator>().SetTrigger("Move");
             Belakang.GetComponent<Animator>().SetTrigger("Move");
+            
         }
     }
 }
