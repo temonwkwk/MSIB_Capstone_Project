@@ -5,13 +5,13 @@ using UnityEngine;
 public class PushSkill : MonoBehaviour
 {
     [SerializeField] GameObject player;
-    PlayerPushObject push;
+    PlayerController push;
     PowerIndicator powerCount;
     bool active;
     // Start is called before the first frame update
     void Start()
     {
-        push = player.GetComponent<PlayerPushObject>();
+        push = player.GetComponent<PlayerController>();
         powerCount = GetComponent<PowerIndicator>();
     }
 
@@ -20,11 +20,11 @@ public class PushSkill : MonoBehaviour
     {
         if (powerCount.power == 3)
         {
-            push.forceMagnitude = 1;
+            push.pushForce = 1;
         }
         else 
         {
-            push.forceMagnitude = 0;
+            push.pushForce = 0;
         }
     }
 }

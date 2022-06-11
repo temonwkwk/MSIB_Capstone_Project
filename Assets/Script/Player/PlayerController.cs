@@ -85,6 +85,11 @@ public class PlayerController : MonoBehaviour
         if(rb != null && hit.collider.CompareTag("Box"))
         {
             rb.velocity = hit.moveDirection * pushForce;
+            anim.SetBool("isPushing", true);
+        }
+        else
+        {
+            anim.SetBool("isPushing", false);
         }
     }
 }
