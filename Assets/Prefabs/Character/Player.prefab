@@ -1021,8 +1021,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb36582e39a02f54b8ea80cbf14d915d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
-  anim: {fileID: 0}
+  controller: {fileID: 3438404728981263735}
+  anim: {fileID: 3438404728981263734}
   pushForce: 0
   playerSpeed: 6.43
   jumpHeight: 1
@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceMagnitude: 0
-  playerctrl: {fileID: 0}
+  playerctrl: {fileID: 3438404728981263730}
 --- !u!1 &3594913139542319049
 GameObject:
   m_ObjectHideFlags: 0

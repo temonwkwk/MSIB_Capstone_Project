@@ -23,6 +23,7 @@ public class DashSkill : MonoBehaviour
         {
             StartCoroutine(Dash());
             cooldownFinish = Time.time + cooldownTime;
+            // Debug.Log("Dash");
         }
     }
 
@@ -34,6 +35,7 @@ public class DashSkill : MonoBehaviour
         {
             moveScript.controller.Move(moveScript.move * dashSpeed * Time.deltaTime );
             yield return null;
+            Debug.Log("Dash");
         }
     }
 }

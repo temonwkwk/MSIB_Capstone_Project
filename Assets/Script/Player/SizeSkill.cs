@@ -24,11 +24,15 @@ public class SizeSkill : MonoBehaviour
         {
             if(shrink == false)
             {
+                anim.Play("Small");
                 anim.SetBool("Shrink", true);
+                // anim.Play("Idle");
                 shrink = true;
             }
             else
             {
+                // anim.Play("Growth");
+                anim.Play("Big");
                 anim.SetBool("Shrink", false);
                 shrink = false; 
             }
@@ -36,6 +40,8 @@ public class SizeSkill : MonoBehaviour
         }
         if (powerCount.power != 2 && shrink == true)
         {
+            // anim.Play("Growth");
+            anim.Play("Big");
             anim.SetBool("Shrink", false);
             shrink = false;
         }
