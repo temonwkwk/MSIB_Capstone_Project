@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
     public Animator anim;
-
+    
     private Vector3 playerVelocity;
     private bool groundedPlayer;
     private bool doubleJump;

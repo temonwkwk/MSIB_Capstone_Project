@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class PowerIndicator : MonoBehaviour
 {
-    public float power;
-    public float maxPower;
-    // Start is called before the first frame update
+    public float power = 0;
+    public float maxPower = 3;
+
     void Start()
     {
-        power = 0;
-        maxPower = 2;
     }
 
-    // Update is called once per frame
     void Update()
     {
         //Input Power
