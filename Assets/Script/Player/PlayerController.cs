@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
     {
         Rigidbody rb = hit.collider.attachedRigidbody;
 
-        if(rb != null && hit.collider.CompareTag("Box"))
+        if(rb != null && hit.collider.CompareTag("Box") || hit.collider.CompareTag("TriggerObject"))
         {
             rb.velocity = hit.moveDirection * pushForce;
             anim.SetBool("isPushing", true);

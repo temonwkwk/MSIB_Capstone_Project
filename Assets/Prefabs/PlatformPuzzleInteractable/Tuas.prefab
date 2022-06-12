@@ -598,8 +598,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.724488, z: 1}
+  m_Center: {x: -0, y: 0.13775639, z: 0}
 --- !u!114 &8407002625736313847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,6 +625,7 @@ GameObject:
   - component: {fileID: 8407002626994076552}
   - component: {fileID: 8676964825145250022}
   - component: {fileID: 8676964825145250023}
+  - component: {fileID: 5658968264338373624}
   m_Layer: 0
   m_Name: Tuas
   m_TagString: Untagged
@@ -682,11 +683,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8676964825145250025}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.695629, y: 2.1639419, z: 1.6515554}
-  m_Center: {x: -0.0119713545, y: 0.58197093, z: 0.02622962}
+  m_Size: {x: 1.695629, y: 1.6968488, z: 1.6515554}
+  m_Center: {x: -0.0119713545, y: 0.81550723, z: 0.02622962}
 --- !u!114 &8676964825145250023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,4 +700,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5217b05349874fa4aa3c305b79175f25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerIsHere: 0
   anim: {fileID: 0}
+  TriggerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &5658968264338373624
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8676964825145250025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.971903, z: 1.3482181}
+  m_Center: {x: -1.5530571e-16, y: 0.49874285, z: -0.04217866}

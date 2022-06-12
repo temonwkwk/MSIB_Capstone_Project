@@ -15,10 +15,10 @@ public class NextSceneOut : MonoBehaviour
         {
             // Debug.Log("playerIsHere");
             Playerctrl = PlayerManager.instance.transform.GetComponent<CharacterController>();
+            //Playerctrl = GameObject.FindWithTag("Player").GetComponent<CharacterController>();
             Playerctrl.enabled = false;
             PlayerManager.instance.transform.position = transform.position;
             PlayerManager.instance.transform.rotation = transform.rotation;
-
             Playerctrl.enabled = true;
         }
     }
