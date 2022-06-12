@@ -38,4 +38,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Capstone/Level1/Level1Area4.unity
     guid: 66c7d9f8be52e6b44949b7ec23595992
+  - enabled: 1
+    path: Assets/Scenes/Capstone/Level2/Level2-Area1.unity
+    guid: b7cf8b9a1b4914f409c538985e3b90d7
+  - enabled: 1
+    path: Assets/Scenes/Capstone/Level2/Level2-Area2.unity
+    guid: d4f0032955f45f942bcb72ee325936a5
+  - enabled: 1
+    path: Assets/Scenes/Capstone/Level2/Level2-Area3.unity
+    guid: 6206985132e58f64488782ea65cc7c49
   m_configObjects: {}

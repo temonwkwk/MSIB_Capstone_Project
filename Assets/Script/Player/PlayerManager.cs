@@ -8,7 +8,7 @@ public class PlayerManager : MonoBehaviour
     public static PlayerManager instance;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         if(instance != null)
         {

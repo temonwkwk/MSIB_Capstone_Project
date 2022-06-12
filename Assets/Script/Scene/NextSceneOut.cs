@@ -19,7 +19,6 @@ public class NextSceneOut : MonoBehaviour
             Playerctrl.enabled = false;
             PlayerManager.instance.transform.position = transform.position;
             PlayerManager.instance.transform.rotation = transform.rotation;
-
             Playerctrl.enabled = true;
         }
     }
