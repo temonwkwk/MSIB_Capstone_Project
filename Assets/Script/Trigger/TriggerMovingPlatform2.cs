@@ -12,11 +12,19 @@ public class TriggerMovingPlatform2 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        platform.NextPlatform();
+        if (other.CompareTag("Player"))
+        {
+            platform.NextPlatform();
+        }
+
     }
 
     public void OnTriggerExit(Collider other)
     {
-        platform.ReturnPlatform();
+        if (other.CompareTag("Player"))
+        {
+            platform.ReturnPlatform();
+        }
+
     }
 }
