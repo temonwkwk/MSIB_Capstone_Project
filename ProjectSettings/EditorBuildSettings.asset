@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/CutsceneIntro.unity
+    guid: eef586a481d4be3459b8b745a7811f45
   - enabled: 1
     path: Assets/Scenes/Capstone/GameMenu.unity
     guid: 5f474a588f8014bfea2f9aa2fe88b9bf
-  - enabled: 1
-    path: Assets/Scenes/CutsceneIntro.unity
-    guid: eef586a481d4be3459b8b745a7811f45
   - enabled: 1
     path: Assets/Scenes/Capstone/StartingPoint/StartingPoint.unity
     guid: ffb5f91d6aae4404dac943ee04971704
