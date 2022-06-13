@@ -13,6 +13,7 @@ public class SizeSkill : MonoBehaviour
 
     void Start()
     {
+        player = PlayerManager.instance.gameObject;
         anim = player.GetComponent<Animator>();
         powerCount = GetComponent<PowerIndicator>();
     }

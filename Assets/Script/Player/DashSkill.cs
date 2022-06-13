@@ -13,13 +13,14 @@ public class DashSkill : MonoBehaviour
     private float cooldownFinish = 0;
     void Start()
     {
+        player = PlayerManager.instance.gameObject;
         moveScript = player.GetComponent<PlayerController>();
         powerCount = GetComponent<PowerIndicator>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R) && powerCount.power == 1 && Time.time > cooldownFinish)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && powerCount.power == 1 && Time.time > cooldownFinish)
         {
             StartCoroutine(Dash());
             cooldownFinish = Time.time + cooldownTime;

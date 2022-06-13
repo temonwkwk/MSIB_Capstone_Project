@@ -11,6 +11,7 @@ public class PushSkill : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = PlayerManager.instance.gameObject;
         push = player.GetComponent<PlayerController>();
         powerCount = GetComponent<PowerIndicator>();
     }
