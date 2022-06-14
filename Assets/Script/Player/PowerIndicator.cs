@@ -29,28 +29,28 @@ public class PowerIndicator : MonoBehaviour
         switch (power)
         {
             case 0:
-            ppower[0].SetActive(false);
-            ppower[1].SetActive(false);
-            ppower[2].SetActive(false);
-            break;
+                ppower[0].SetActive(false);
+                ppower[1].SetActive(false);
+                ppower[2].SetActive(false);
+                break;
 
             case 1:
-            ppower[0].SetActive(true);
-            ppower[1].SetActive(false);
-            ppower[2].SetActive(false);
-            break;
-            
+                ppower[0].SetActive(true);
+                ppower[1].SetActive(false);
+                ppower[2].SetActive(false);
+                break;
+
             case 2:
-            ppower[0].SetActive(false);
-            ppower[1].SetActive(true);
-            ppower[2].SetActive(false);
-            break;
+                ppower[0].SetActive(false);
+                ppower[1].SetActive(true);
+                ppower[2].SetActive(false);
+                break;
 
             case 3:
-            ppower[0].SetActive(false);
-            ppower[1].SetActive(false);
-            ppower[2].SetActive(true);
-            break;
+                ppower[0].SetActive(false);
+                ppower[1].SetActive(false);
+                ppower[2].SetActive(true);
+                break;
         }
     }
 }

@@ -21,7 +21,7 @@ public class PushSkill : MonoBehaviour
     {
         if (powerCount.power == 1)
         {
-            push.pushForce = 2;
+            push.pushForce = 4;
         }
         else 
         {

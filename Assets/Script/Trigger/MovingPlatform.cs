@@ -45,6 +45,14 @@ public class MovingPlatform : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if(tolerance != 0.08f)
+        {
+            tolerance = 0.08f;
+        }
+    }
+
     void MovePlatform()
     {
         Vector3 heading = current_target - transform.position;
@@ -97,8 +105,7 @@ public class MovingPlatform : MonoBehaviour
     {
         if (other.CompareTag("Player") || other.CompareTag("TriggerObject") || other.CompareTag("Box"))
         {
-            other.transform.parent = null;
-
+            other.transform.parent = GameManager.instance.gameObject.transform;
         }
     }
 }

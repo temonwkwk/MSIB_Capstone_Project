@@ -51,9 +51,9 @@ MonoBehaviour:
   power: 0
   maxPower: 3
   ppower:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 6626792155367074912, guid: 84d830567708c6e42b7d4e9d165533b3, type: 3}
+  - {fileID: 205625472355542335, guid: fce0dfb535763de4bbb7f3b56ebe43b8, type: 3}
+  - {fileID: 5166350621532269034, guid: a63e4d974de63fb42ad483b0324daea0, type: 3}
 --- !u!114 &8905166626397899888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b154b522e56b05043bf218c1b67a06a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 3438404728981263733, guid: d8fcb1849edea064995be46e23e06037, type: 3}
   dashSpeed: 10
   dashTime: 1
   cooldownTime: 1

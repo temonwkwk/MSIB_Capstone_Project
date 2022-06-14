@@ -18,4 +18,9 @@ public class NextSceneIn : MonoBehaviour
         }
 
     }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene("GameMenu");
+    }
 }

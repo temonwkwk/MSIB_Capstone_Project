@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/CutsceneIntro.unity
     guid: eef586a481d4be3459b8b745a7811f45
   - enabled: 1
@@ -47,4 +47,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Capstone/Level2/Level2-Area3.unity
     guid: 6206985132e58f64488782ea65cc7c49
+  - enabled: 1
+    path: Assets/Scenes/Capstone/Level3/Level3-Area1.unity
+    guid: 7891771f0936078439065a9680649d79
+  - enabled: 1
+    path: Assets/Scenes/Capstone/Level3/Level3-Area2.unity
+    guid: 26994791b8b9fed44a3109a6b687d038
+  - enabled: 1
+    path: Assets/Scenes/Capstone/Level3/Level3-Area3.unity
+    guid: 2f97d50e92cc98648a880f91c96cc976
+  - enabled: 1
+    path: Assets/Scenes/Capstone/Level3/Level3-Area4.unity
+    guid: 3d338c92e29a4e24e88861defcc3754a
   m_configObjects: {}
