@@ -2111,7 +2111,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7795275, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2435,6 +2435,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2742845782275006814, guid: d8fcb1849edea064995be46e23e06037, type: 3}
+      propertyPath: m_TagString
+      value: Hat
+      objectReference: {fileID: 0}
     - target: {fileID: 2765818561259829323, guid: d8fcb1849edea064995be46e23e06037, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 6.6220193
@@ -2635,6 +2639,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -24.334997
       objectReference: {fileID: 0}
+    - target: {fileID: 5169013152957227128, guid: d8fcb1849edea064995be46e23e06037, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5169013152957227128, guid: d8fcb1849edea064995be46e23e06037, type: 3}
+      propertyPath: m_TagString
+      value: Hat
+      objectReference: {fileID: 0}
     - target: {fileID: 5265631387774010476, guid: d8fcb1849edea064995be46e23e06037, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 11.140308
@@ -2766,6 +2778,14 @@ PrefabInstance:
     - target: {fileID: 7542448015044095835, guid: d8fcb1849edea064995be46e23e06037, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 2.6582575
+      objectReference: {fileID: 0}
+    - target: {fileID: 7543001097573505385, guid: d8fcb1849edea064995be46e23e06037, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7543001097573505385, guid: d8fcb1849edea064995be46e23e06037, type: 3}
+      propertyPath: m_TagString
+      value: Hat
       objectReference: {fileID: 0}
     - target: {fileID: 7636876126855780216, guid: d8fcb1849edea064995be46e23e06037, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8771,6 +8791,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 162231980}
+    - target: {fileID: 2856322149442039830, guid: b5a86090d4734e54884df09468b84d40, type: 3}
+      propertyPath: push.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3262490474101534045, guid: b5a86090d4734e54884df09468b84d40, type: 3}
       propertyPath: m_Name
       value: GameManager
