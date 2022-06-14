@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VideoSettingsHandler : MonoBehaviour
+public class GameSettings : MonoBehaviour
 {
     private int ResolutionWidth;
     private int ResolutionHeight;
