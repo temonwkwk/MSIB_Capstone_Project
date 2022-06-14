@@ -20,7 +20,7 @@ public class DashSkill : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && powerCount.power == 1 && Time.time > cooldownFinish)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && powerCount.power == 3 && Time.time > cooldownFinish)
         {
             StartCoroutine(Dash());
             cooldownFinish = Time.time + cooldownTime;

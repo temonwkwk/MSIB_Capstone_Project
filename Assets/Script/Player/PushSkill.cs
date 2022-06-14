@@ -19,7 +19,7 @@ public class PushSkill : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (powerCount.power == 3)
+        if (powerCount.power == 1)
         {
             push.pushForce = 2;
         }

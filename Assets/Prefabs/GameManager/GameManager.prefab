@@ -50,6 +50,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   power: 0
   maxPower: 3
+  ppower:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &8905166626397899888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,9 +66,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b154b522e56b05043bf218c1b67a06a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 3438404728981263733, guid: d8fcb1849edea064995be46e23e06037, type: 3}
-  dashSpeed: 2
-  dashTime: 0.25
+  player: {fileID: 0}
+  dashSpeed: 10
+  dashTime: 1
   cooldownTime: 1
 --- !u!114 &2393784218836896042
 MonoBehaviour:

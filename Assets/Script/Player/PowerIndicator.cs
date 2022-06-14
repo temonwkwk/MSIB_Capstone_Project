@@ -10,7 +10,6 @@ public class PowerIndicator : MonoBehaviour
 
     void Start()
     {
-        ppower = GameObject.FindGameObjectsWithTag("Hat");
     }
 
     void Update()

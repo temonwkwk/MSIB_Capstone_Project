@@ -3827,6 +3827,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1909292756078138180, guid: 0a412dc4264101f4ab7d28b24c855adb, type: 3}
+--- !u!1 &749924029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5169013152957227128, guid: d8fcb1849edea064995be46e23e06037, type: 3}
+  m_PrefabInstance: {fileID: 558043706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &751913870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5970,6 +5975,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3525479140033381557, guid: 007f7005f4d6de949ab2820933a418b9, type: 3}
+--- !u!1 &1395944204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7543001097573505385, guid: d8fcb1849edea064995be46e23e06037, type: 3}
+  m_PrefabInstance: {fileID: 558043706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1424658947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6794,6 +6804,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1670734933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2742845782275006814, guid: d8fcb1849edea064995be46e23e06037, type: 3}
+  m_PrefabInstance: {fileID: 558043706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1685624379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8795,6 +8810,18 @@ PrefabInstance:
       propertyPath: push.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2856322149442039830, guid: b5a86090d4734e54884df09468b84d40, type: 3}
+      propertyPath: ppower.Array.data[0]
+      value: 
+      objectReference: {fileID: 1670734933}
+    - target: {fileID: 2856322149442039830, guid: b5a86090d4734e54884df09468b84d40, type: 3}
+      propertyPath: ppower.Array.data[1]
+      value: 
+      objectReference: {fileID: 749924029}
+    - target: {fileID: 2856322149442039830, guid: b5a86090d4734e54884df09468b84d40, type: 3}
+      propertyPath: ppower.Array.data[2]
+      value: 
+      objectReference: {fileID: 1395944204}
     - target: {fileID: 3262490474101534045, guid: b5a86090d4734e54884df09468b84d40, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -8847,14 +8874,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 162231980}
-    - target: {fileID: 8905166626397899888, guid: b5a86090d4734e54884df09468b84d40, type: 3}
-      propertyPath: dashTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8905166626397899888, guid: b5a86090d4734e54884df09468b84d40, type: 3}
-      propertyPath: dashSpeed
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5a86090d4734e54884df09468b84d40, type: 3}
 --- !u!1001 &6976759679559372242
