@@ -4,12 +4,26 @@ using UnityEngine;
 
 public class PowerIndicator : MonoBehaviour
 {
-    public float power = 0;
-    public float maxPower = 3;
+
+    public static PowerIndicator instance;
+
+
+    public int power = 0;
+    public int maxPower = 3;
     public GameObject[] ppower;
 
     void Start()
     {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+
+        DontDestroyOnLoad(gameObject);
     }
 
     void Update()
@@ -24,6 +38,11 @@ public class PowerIndicator : MonoBehaviour
         if (power > maxPower)
         {
             power = 0;
+        }
+
+        if(maxPower > 3)
+        {
+            maxPower = 3;
         }
 
         switch (power)
@@ -52,5 +71,10 @@ public class PowerIndicator : MonoBehaviour
                 ppower[2].SetActive(true);
                 break;
         }
+    }
+
+    public void addMaxPower(int power)
+    {
+        maxPower += power;
     }
 }

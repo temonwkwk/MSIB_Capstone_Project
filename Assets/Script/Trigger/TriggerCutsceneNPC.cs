@@ -15,6 +15,7 @@ public class TriggerCutsceneNPC : MonoBehaviour
             if(GameData.instance.progressData == 0)
             {
                 GameData.instance.AddProgress(1);
+                PowerIndicator.instance.addMaxPower(1);
                 timelineCutscene1.SetActive(true);
             }
 

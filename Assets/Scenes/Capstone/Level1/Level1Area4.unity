@@ -19107,6 +19107,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7218485436736833906, guid: 1818b494b5bc8c6488ed15b8851a96c0, type: 3}
+      propertyPath: questItem1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218485436736833906, guid: 1818b494b5bc8c6488ed15b8851a96c0, type: 3}
+      propertyPath: questitem1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218485436736833906, guid: 1818b494b5bc8c6488ed15b8851a96c0, type: 3}
+      propertyPath: questitem2
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7218485436736833911, guid: 1818b494b5bc8c6488ed15b8851a96c0, type: 3}
       propertyPath: m_Name
       value: QuestItem_PowerUp
