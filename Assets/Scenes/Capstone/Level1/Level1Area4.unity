@@ -1217,15 +1217,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2552771741694753978, guid: 630dbe31e8cba254eb8f934ecc7b5eb8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.46
+      value: 12.22
       objectReference: {fileID: 0}
     - target: {fileID: 2552771741694753978, guid: 630dbe31e8cba254eb8f934ecc7b5eb8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.7
+      value: 5.16
       objectReference: {fileID: 0}
     - target: {fileID: 2552771741694753978, guid: 630dbe31e8cba254eb8f934ecc7b5eb8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.98
+      value: -7.07
       objectReference: {fileID: 0}
     - target: {fileID: 2552771741694753978, guid: 630dbe31e8cba254eb8f934ecc7b5eb8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7985,6 +7985,89 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 121766347361724945, guid: 5931b9b1d93607b40bca0e288629c6be, type: 3}
+--- !u!1 &842801081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 842801084}
+  - component: {fileID: 842801083}
+  - component: {fileID: 842801082}
+  m_Layer: 0
+  m_Name: CutsceneShrinkPowerup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &842801082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842801081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 39cddc2971d698242b719f6d1a6169e4, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 842801081}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!320 &842801083
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842801081}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 3a2c3a209bda71043ac55678465e84e7, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 5289694449014333632, guid: 3a2c3a209bda71043ac55678465e84e7, type: 2}
+    value: {fileID: 2064607490}
+  m_ExposedReferences:
+    m_References:
+    - 64a71621a94e8bc45847bb90909077e7: {fileID: 1071590906}
+--- !u!4 &842801084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842801081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.989136, y: 8.790951, z: 45.014225}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &844401951 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6013029601412296399, guid: 5931b9b1d93607b40bca0e288629c6be, type: 3}
@@ -9707,6 +9790,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0d9d69ed5740d34cb2c6eb9120eb614, type: 3}
+--- !u!114 &1071590906 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6395184180903781096, guid: b0d9d69ed5740d34cb2c6eb9120eb614, type: 3}
+  m_PrefabInstance: {fileID: 1071590905}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319d2fe34a804e245819465c9505ea59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1074563529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18631,6 +18725,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c02b2807f464ea3498fc29c55b549041, type: 3}
+--- !u!114 &2064607490 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7949852199299746390, guid: c02b2807f464ea3498fc29c55b549041, type: 3}
+  m_PrefabInstance: {fileID: 2064607489}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!64 &2064630488
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19125,3 +19230,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1818b494b5bc8c6488ed15b8851a96c0, type: 3}
+--- !u!1 &7218485436792791021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7218485436736833911, guid: 1818b494b5bc8c6488ed15b8851a96c0, type: 3}
+  m_PrefabInstance: {fileID: 7218485436792791020}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7218485436792791022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7218485436792791021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca03e2b1ecfde694f995111e59f0f4fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timelineCutscene: {fileID: 0}
