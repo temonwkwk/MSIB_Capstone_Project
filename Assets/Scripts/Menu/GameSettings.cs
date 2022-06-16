@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class GameSettings : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class GameSettings : MonoBehaviour
     public void SetResolutionWidth(int width) => ResolutionWidth = width;
     public void SetResolutionHeight(int height) => ResolutionHeight = height;
     public void SetFullscreen(bool value) => FullscreenIsOn = value;
+
+    public AudioMixer audioMixer;
 
     public void SetResolution()
     {
@@ -34,5 +37,15 @@ public class GameSettings : MonoBehaviour
     {
         Debug.Log("Anti Aliasing : " + value);
         QualitySettings.antiAliasing = value;
+    }
+
+    public void SetBGM (float volume)
+    {
+        audioMixer.SetFloat("BGMVol", volume);
+    }
+
+    public void SetSFX (float volume)
+    {
+        audioMixer.SetFloat("SFXVol", volume);
     }
 }

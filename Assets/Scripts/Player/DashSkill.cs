@@ -24,6 +24,7 @@ public class DashSkill : MonoBehaviour
         {
             StartCoroutine(Dash());
             cooldownFinish = Time.time + cooldownTime;
+            PowerIndicator.instance.PowerUPSFX("dash");
             // Debug.Log("Dash");
         }
     }

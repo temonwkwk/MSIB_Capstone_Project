@@ -29,13 +29,15 @@ public class SizeSkill : MonoBehaviour
                 anim.SetBool("Shrink", true);
                 // anim.Play("Idle");
                 shrink = true;
+                PowerIndicator.instance.PowerUPSFX("size");
             }
             else
             {
                 // anim.Play("Growth");
                 anim.Play("Big");
                 anim.SetBool("Shrink", false);
-                shrink = false; 
+                shrink = false;
+                PowerIndicator.instance.PowerUPSFX("size");
             }
             cooldownFinish = Time.time + cooldownTime;
         }

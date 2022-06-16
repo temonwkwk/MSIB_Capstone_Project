@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
     public Animator anim;
+    private AudioSource audio;
     
     private Vector3 playerVelocity;
     private bool groundedPlayer;
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         controller = gameObject.GetComponent<CharacterController>();
         anim = gameObject.GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -49,6 +51,12 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.transform.forward = move;
             anim.SetBool("isMoving", true);
+            if (controller.isGrounded == true && audio.isPlaying == false)
+            {
+                audio.volume = Random.Range(0.8f, 1);
+                audio.pitch = Random.Range(0.8f, 1.1f);
+                audio.Play();
+            }
         }
         else
         {

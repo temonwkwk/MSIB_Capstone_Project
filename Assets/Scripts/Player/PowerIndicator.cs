@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PowerIndicator : MonoBehaviour
 {
+    private AudioSource audio;
 
     public static PowerIndicator instance;
 
+    public AudioClip[] audioClipArray;
 
     public int power = 0;
     public int maxPower = 3;
@@ -14,6 +16,8 @@ public class PowerIndicator : MonoBehaviour
 
     void Start()
     {
+        audio = GetComponent<AudioSource>();
+
         if (instance != null)
         {
             Destroy(gameObject);
@@ -31,21 +35,19 @@ public class PowerIndicator : MonoBehaviour
         //Input Power
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            power++;
+            addPower(1);
+            sellectPower(power);
         }
 
-        //Biar Power Balik ke Awal
-        if (power > maxPower)
-        {
-            power = 0;
-        }
-
-        if(maxPower > 3)
+        if (maxPower > 3)
         {
             maxPower = 3;
         }
+    }
 
-        switch (power)
+    public void sellectPower(int value)
+    {
+        switch (value)
         {
             case 0:
                 ppower[0].SetActive(false);
@@ -68,7 +70,7 @@ public class PowerIndicator : MonoBehaviour
             case 3:
                 ppower[0].SetActive(false);
                 ppower[1].SetActive(false);
-                ppower[2].SetActive(true);
+                ppower[2].SetActive(true);                
                 break;
         }
     }
@@ -81,5 +83,34 @@ public class PowerIndicator : MonoBehaviour
     public void addPower(int addpower)
     {
         power += addpower;
+        if (power > maxPower)
+        {
+            power = 0;
+        }
+        else
+        {
+            PowerUPSFX("change");
+        }
+    }
+
+    public void PowerUPSFX(string value)
+    {
+        switch (value)
+        {
+            case "change":
+                audio.clip = audioClipArray[0];
+                audio.Play();
+                break;
+
+            case "size":
+                audio.clip = audioClipArray[1];
+                audio.Play();
+                break;
+
+            case "dash":
+                audio.clip = audioClipArray[2];
+                audio.Play();
+                break;
+        }
     }
 }

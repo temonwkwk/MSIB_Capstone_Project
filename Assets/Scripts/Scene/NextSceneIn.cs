@@ -33,6 +33,7 @@ public class NextSceneIn : MonoBehaviour
 			PlayerPrefs.SetString("SceneOutName", TargetLocName);
 			if (useLoading)
             {
+				Time.timeScale = 0;
 				ccontroller.enabled = false;
 				pcontroller.enabled = false;
 				loadingCanvas.SetActive(true);
@@ -62,6 +63,7 @@ public class NextSceneIn : MonoBehaviour
 
 				if (Input.GetKeyDown("space"))
 				{
+					Time.timeScale = 1;
 					operation.allowSceneActivation = true;
 				}
 			}

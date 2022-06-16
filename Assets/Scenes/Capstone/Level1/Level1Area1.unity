@@ -8608,10 +8608,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8676964825145250023, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
       propertyPath: TriggerEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8676964825145250023, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
       propertyPath: TriggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676964825145250023, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
+      propertyPath: TriggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8676964825145250023, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
@@ -8619,7 +8623,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 463178021}
     - target: {fileID: 8676964825145250023, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
+      propertyPath: TriggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1568810979}
+    - target: {fileID: 8676964825145250023, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
       propertyPath: TriggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676964825145250023, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
+      propertyPath: TriggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8676964825145250023, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
@@ -8627,11 +8639,23 @@ PrefabInstance:
       value: NextPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 8676964825145250023, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
+      propertyPath: TriggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676964825145250023, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
       propertyPath: TriggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MovingPlatform, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8676964825145250023, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
+      propertyPath: TriggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676964825145250023, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
       propertyPath: TriggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676964825145250023, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
+      propertyPath: TriggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8676964825145250025, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
@@ -8643,6 +8667,11 @@ PrefabInstance:
 --- !u!4 &1568810978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8295935240101677651, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
+  m_PrefabInstance: {fileID: 1568810977}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1568810979 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 54650982479634296, guid: dd19c5ec6b1bfce41aeeaa441a173c70, type: 3}
   m_PrefabInstance: {fileID: 1568810977}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1588600839
