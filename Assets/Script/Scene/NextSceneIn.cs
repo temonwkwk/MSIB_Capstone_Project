@@ -15,12 +15,14 @@ public class NextSceneIn : MonoBehaviour
         {
             PlayerPrefs.SetString("SceneOutName", TargetLocName);
             SceneManager.LoadSceneAsync(nextSceneName);
+
+
         }
 
     }
 
     public void LoadNextScene()
     {
-        SceneManager.LoadScene("GameMenu");
+        SceneManager.LoadSceneAsync(nextSceneName);
     }
 }

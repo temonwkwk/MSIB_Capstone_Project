@@ -7,6 +7,8 @@ public class QuestItem : MonoBehaviour
     public bool questItem1;
     public bool questItem2;
 
+    public GameObject teleport;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +54,7 @@ public class QuestItem : MonoBehaviour
             }
 
             gameObject.SetActive(false);
+            teleport.SetActive(true);
         }
     }
 }
