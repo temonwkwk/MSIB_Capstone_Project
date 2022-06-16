@@ -22,7 +22,7 @@ public class QuestItem : MonoBehaviour
 
             if(GameData.instance.progressData >= 2 || PowerIndicator.instance.maxPower != 1)
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
         if (questItem2 == true)
@@ -30,7 +30,7 @@ public class QuestItem : MonoBehaviour
             questItem1 = false;
             if (GameData.instance.progressData >= 3 || PowerIndicator.instance.maxPower != 2)
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
     }
@@ -41,6 +41,15 @@ public class QuestItem : MonoBehaviour
         {
             GameData.instance.AddProgress(1);
             PowerIndicator.instance.addMaxPower(1);
+
+            if(PowerIndicator.instance.power == 0)
+            {
+                PowerIndicator.instance.addPower(2);
+            }
+            if (PowerIndicator.instance.power == 1)
+            {
+                PowerIndicator.instance.addPower(1);
+            }
 
             gameObject.SetActive(false);
         }

@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Timeline;
 
 public class CameraManager : MonoBehaviour
 {
-
+    
     public static CameraManager instance;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,8 @@ public class CameraManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
+
+       
     }
 
     // Update is called once per frame

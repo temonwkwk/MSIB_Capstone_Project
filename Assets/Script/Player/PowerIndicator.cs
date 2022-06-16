@@ -73,8 +73,13 @@ public class PowerIndicator : MonoBehaviour
         }
     }
 
-    public void addMaxPower(int power)
+    public void addMaxPower(int addmaxPower)
     {
-        maxPower += power;
+        maxPower += addmaxPower;
+    }
+
+    public void addPower(int addpower)
+    {
+        power += addpower;
     }
 }
