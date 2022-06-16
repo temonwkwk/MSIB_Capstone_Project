@@ -4,23 +4,26 @@ using UnityEngine;
 
 public class NextSceneOut : MonoBehaviour
 {
-    private CharacterController PlayerController;
+    private CharacterController ccontroller;
+    private PlayerController pcontroller;
+
     public string TargetLocName;  //// Target Lokasi player akan muncul dimana?
 
     // Start is called before the first frame update
     void Start()
     {
-        PlayerController = PlayerManager.instance.transform.GetComponent<CharacterController>();
+        ccontroller = PlayerManager.instance.transform.GetComponent<CharacterController>();
+        pcontroller = PlayerManager.instance.transform.GetComponent<PlayerController>();
 
         if (PlayerPrefs.GetString("SceneOutName") == TargetLocName)
         {
             // Debug.Log("playerIsHere");
-            PlayerController.enabled = false;
+            ccontroller.enabled = false;
+            pcontroller.enabled = false;
             PlayerManager.instance.transform.position = transform.position;
             PlayerManager.instance.transform.rotation = transform.rotation;
-            PlayerController.enabled = true;
+            ccontroller.enabled = true;
+            pcontroller.enabled = true;
         }
     }
-
-    
 }
