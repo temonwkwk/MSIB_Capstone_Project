@@ -35,7 +35,7 @@ public class LoadingScript : MonoBehaviour
 			{
 				finishedLoadingText.gameObject.SetActive(true);
 
-				if (Input.anyKeyDown)
+				if (Input.GetKeyDown("space"))
 				{
 					operation.allowSceneActivation = true;
 				}

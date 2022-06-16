@@ -435,7 +435,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press any key to continue
+  m_text: Press "space" to continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: debe894442e153d479c7f9d07cce1276, type: 2}
   m_sharedMaterial: {fileID: 21975412471922176, guid: debe894442e153d479c7f9d07cce1276, type: 2}
@@ -668,7 +668,6 @@ GameObject:
   - component: {fileID: 1709417144512875607}
   - component: {fileID: 1528578534094664215}
   - component: {fileID: 1528217432115746751}
-  - component: {fileID: 1711172596733874316}
   m_Layer: 5
   m_Name: Loading
   m_TagString: Untagged
@@ -760,18 +759,3 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &1711172596733874316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1488079438513743725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 190660e9f3e78484dbb0f7e6f38af6ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: StartingPoint
-  loadBar: {fileID: 1528588384518695347}
-  finishedLoadingText: {fileID: 1528936941105842703}
