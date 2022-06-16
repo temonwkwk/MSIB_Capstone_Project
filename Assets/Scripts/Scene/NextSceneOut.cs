@@ -26,4 +26,6 @@ public class NextSceneOut : MonoBehaviour
             pcontroller.enabled = true;
         }
     }
+
+
 }
