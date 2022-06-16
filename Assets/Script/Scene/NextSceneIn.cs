@@ -69,4 +69,10 @@ public class NextSceneIn : MonoBehaviour
 			yield return null;
 		}
 	}
+
+	public void BackToMainMenu()
+	{
+		SceneManager.LoadScene("GameMenu");
+
+	}
 }

@@ -18,9 +18,19 @@ public class ObjectSetDeactive : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("player"))
-        {
-            other.gameObject.SetActive(false);
-        }
+        /*        if(other.gameObject.CompareTag("player"))
+                {
+                    other.gameObject.SetActive(false);
+                }*/
+
+        PlayerManager.instance.gameObject.SetActive(false);
+        StartCoroutine("ReActive");
+
+    }
+
+    IEnumerator ReActive()
+    {
+        yield return new WaitForSeconds(5);
+        PlayerManager.instance.gameObject.SetActive(true);
     }
 }
