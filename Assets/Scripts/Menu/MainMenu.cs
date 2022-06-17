@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace SlimUI.ModernMenu{
 	public class MainMenu : MonoBehaviour
@@ -91,9 +92,7 @@ namespace SlimUI.ModernMenu{
 
 		public void ExtrasMenu()
 		{
-			if (playMenu) playMenu.SetActive(false);
-			extrasMenu.SetActive(true);
-			if (exitMenu) exitMenu.SetActive(false);
+			SceneManager.LoadScene("GameExtras");
 		}
 
 		public void QuitGame()
