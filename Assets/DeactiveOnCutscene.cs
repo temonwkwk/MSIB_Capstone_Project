@@ -9,7 +9,6 @@ public class DeactiveOnCutscene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pcontroller = PlayerManager.instance.transform.GetComponent<PlayerController>();
 
     }
 
@@ -21,12 +20,12 @@ public class DeactiveOnCutscene : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        /*        if(other.gameObject.CompareTag("player"))
+              if(other.gameObject.CompareTag("player"))
                 {
                     other.gameObject.SetActive(false);
-                }*/
+                }
 
-        pcontroller.enabled = false;
+        //pcontroller.enabled = false;
 
         StartCoroutine("ReActive");
 
@@ -34,7 +33,9 @@ public class DeactiveOnCutscene : MonoBehaviour
 
     IEnumerator ReActive()
     {
-        yield return new WaitForSeconds(10);
-        pcontroller.enabled = true;
+        yield return new WaitForSeconds(15);
+        PlayerManager.instance.gameObject.SetActive(true);
+
+        //pcontroller.enabled = true;
     }
 }
