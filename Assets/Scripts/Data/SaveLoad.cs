@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SaveLoad : MonoBehaviour
 {
+
+    public GameObject spawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,11 +37,15 @@ public class SaveLoad : MonoBehaviour
         if(PlayerPrefs.HasKey("SceneSaved"))
         {
             string lastScene = PlayerPrefs.GetString("SceneSaved");
-            SceneManager.LoadScene(lastScene); 
+            SceneManager.LoadScene(lastScene);
+            spawn = GameObject.FindGameObjectWithTag("spawn");
+            PlayerManager.instance.transform.position = spawn.transform.position;
         }
 
         GameData.instance.progressData = PlayerPrefs.GetInt("gameProgress");
         PowerIndicator.instance.maxPower = PlayerPrefs.GetInt("powerUp");
+        PowerIndicator.instance.power = 0;
+
 
         /*        if(PlayerPrefs.HasKey("gameProgress"))
                 {
@@ -50,6 +56,14 @@ public class SaveLoad : MonoBehaviour
 
     public void ResetNewGame()
     {
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("SceneSaved");
+        PlayerPrefs.DeleteKey("powerUp");
+        PlayerPrefs.DeleteKey("gameProgress");
+
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene("GameMenu");
     }
 }

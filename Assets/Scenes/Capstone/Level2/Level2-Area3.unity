@@ -8154,6 +8154,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 621391220}
     m_Modifications:
+    - target: {fileID: 2253246608132766907, guid: c4d067828c7d7466e9a243476b53ad29, type: 3}
+      propertyPath: text
+      value: Kamu mendapatkan Dash Caping
+      objectReference: {fileID: 0}
+    - target: {fileID: 2253246608419861909, guid: c4d067828c7d7466e9a243476b53ad29, type: 3}
+      propertyPath: text
+      value: tekan LeftShift untuk dash
+      objectReference: {fileID: 0}
     - target: {fileID: 7233819329229739277, guid: c4d067828c7d7466e9a243476b53ad29, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
