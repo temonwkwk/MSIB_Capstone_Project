@@ -66,4 +66,9 @@ public class SaveLoad : MonoBehaviour
     {
         SceneManager.LoadScene("GameMenu");
     }
+
+public void ResetCutsceneIntro()
+    {
+        SceneManager.LoadScene("CutsceneIntro");
+    }
 }
