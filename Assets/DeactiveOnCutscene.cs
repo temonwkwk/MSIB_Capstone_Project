@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectSetDeactive : MonoBehaviour
+public class DeactiveOnCutscene : MonoBehaviour
 {
+    private PlayerController pcontroller;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        pcontroller = PlayerManager.instance.transform.GetComponent<PlayerController>();
+
     }
 
     // Update is called once per frame
@@ -23,14 +26,15 @@ public class ObjectSetDeactive : MonoBehaviour
                     other.gameObject.SetActive(false);
                 }*/
 
-        PlayerManager.instance.gameObject.SetActive(false);
+        pcontroller.enabled = false;
+
         StartCoroutine("ReActive");
 
     }
 
     IEnumerator ReActive()
     {
-        yield return new WaitForSeconds(5);
-        PlayerManager.instance.gameObject.SetActive(true);
+        yield return new WaitForSeconds(10);
+        pcontroller.enabled = true;
     }
 }

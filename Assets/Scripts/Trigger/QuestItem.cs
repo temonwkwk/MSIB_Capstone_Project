@@ -44,14 +44,34 @@ public class QuestItem : MonoBehaviour
             GameData.instance.AddProgress(1);
             PowerIndicator.instance.addMaxPower(1);
 
-            if(PowerIndicator.instance.power == 0)
+            if(questItem1 == true)
             {
-                PowerIndicator.instance.addPower(2);
+                if (PowerIndicator.instance.power == 0)
+                {
+                    PowerIndicator.instance.addPower(2);
+                }
+                if (PowerIndicator.instance.power == 1)
+                {
+                    PowerIndicator.instance.addPower(1);
+                }
             }
-            if (PowerIndicator.instance.power == 1)
+
+            if(questItem2 == true)
             {
-                PowerIndicator.instance.addPower(1);
+                if (PowerIndicator.instance.power == 0)
+                {
+                    PowerIndicator.instance.addPower(3);
+                }
+                if (PowerIndicator.instance.power == 1)
+                {
+                    PowerIndicator.instance.addPower(2);
+                }
+                if (PowerIndicator.instance.power == 1)
+                {
+                    PowerIndicator.instance.addPower(1);
+                }
             }
+
 
             gameObject.SetActive(false);
             teleport.SetActive(true);
